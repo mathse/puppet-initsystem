@@ -13,7 +13,7 @@ Facter.add(:initsystem) do
       when 5
         'sysvinit'
       when 6
-        'upstart'
+        'redhat'
       when 7
         'systemd'
       else
