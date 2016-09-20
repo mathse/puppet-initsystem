@@ -32,7 +32,7 @@ describe 'initsystem' do
     it "should return upstart" do
       os['name'] = 'CentOS'
       os['release']['major'] = '6'
-      expect(Facter.fact(:initsystem).value).to match('upstart')
+      expect(Facter.fact(:initsystem).value).to match('redhat')
     end
 
     it "should return systemd" do
